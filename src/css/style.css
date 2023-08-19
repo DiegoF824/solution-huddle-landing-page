@@ -4,6 +4,7 @@ body {
     font-family: var(--body-font);
     background: url(../images/bg-desktop.svg) center no-repeat var(--background-color);
     background-size: cover;
+    height: 100%;
 }
 
 .header {
