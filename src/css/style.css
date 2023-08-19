@@ -16,7 +16,8 @@ body {
 }
 
 .container .info {
-    padding: 40px 125px;
+    margin-left: 40px;
+    padding-top: 30px;
 }
 
 .container .info h2 {
