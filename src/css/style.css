@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: var(--body-font);
+    background: url(../images/bg-desktop.svg) center no-repeat var(--background-color);
+    background-size: cover;
+    height: 100vh;
+}
+
+.header {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    padding: 0 30px;
+}
+
+.container .info {
+    padding: 40px 125px;
+}
+
+.container .info h2 {
+    color: #fff;
+    font-family: var(--headings-font);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.container .info p {
+    color: #fff;
+    font-size: 17.3px;
+    margin-bottom: 30px;
+}
+
+.container .info a button {
+    border: none;
+    padding: 18px 66px;
+    border-radius: 50px;
+    color: hsl(257, 40%, 49%);
+    font-size: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container .info a button:hover {
+    background-color: var(--hover-color);
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    gap: 15px;
+    padding: 10px 50px 20px;
+    justify-content: end;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.footer .social:hover {
+    color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+}
+
+@media (max-width: 426px) {
+    body {
+        background: url(../images/bg-mobile.svg) center center no-repeat var(--background-color);
+        background-position: top;
+    }
+
+    .header {
+        margin: 15px 0;
+    }
+
+    .header a img {
+        height: 35px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container img {
+        margin-bottom: 50px;
+    }
+
+    .container .info {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .container .info h2 {
+        font-size: 30px;
+    }
+
+    .container .info a button {
+        padding: 15px 100px;
+        font-size: 15px;
+    }
+
+    .footer {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
